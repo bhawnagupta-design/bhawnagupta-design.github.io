@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bhawna Gupta Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Bhawna Gupta</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/img.jpg);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Bhawna Gupta</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'UI/UX Designer  ',
+						'FrontEnd Developer  ',
+						'HTML,CSS,Bootstrap 4/5,Figma   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>A UI/UX Designer with Frontend Development</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p> 
+							<a href="#project-section" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-me-1.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Bhawna Gupta</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Sr. UI/UX Designer/Frontend Developer</span></p>
+										<p><span class="title-s">Experience: </span> <span>9 Years 1 Months</span></p>
+										<p><span class="title-s">Address: </span> <span>Mohali, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>HTML</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>CSS</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Bootstrap</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Figma</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Angular</span> <span class="pull-right">40%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Adobe XD</span> <span class="pull-right">70%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>Senior UI/UX Designer & Frontend Developer with 9+ years of experience delivering responsive, scalable, and user-centric web applications for enterprise and consumer products. Expert in translating UX wireframes and design systems into high-quality front-end solutions using HTML5, CSS3, SCSS, and Bootstrap. Strong collaborator with designers, product managers, and backend teams to deliver accessible, performance-optimized, and visually consistent interfaces. Proven track record of owning UI implementation end-to-end while meeting tight deadlines and maintaining high code quality.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Sr. UI/UX Designer &amp; Frontend Developer</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Media</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Master in computer application</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+									<li class="d-flex"><span>UI Tools:</span> <span>Figma, Adobe XD, Photoshop</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>HTML, CSS, Bootstrap 4/5, Git, JIRA, Google Analytics, SEO, Tailwind, Basic Angular(work with frontend design of angular components), Visual Studio Code, Responsive Design, Cross-browser Compatibility</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, cooking, Teaching</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="30">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/bhawna-gupta-a1385459/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Senior UI/UX Designer & Frontend Developer with 9+ years of experience delivering responsive, scalable, and user-centric web applications for enterprise and consumer products. Expert in translating UX wireframes and design systems into high-quality front-end solutions using HTML5, CSS3, SCSS, and Bootstrap. Strong collaborator with designers, product managers, and backend teams to deliver accessible, performance-optimized, and visually consistent interfaces. Proven track record of owning UI implementation end-to-end while meeting tight deadlines and maintaining high code quality</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2021-Present</span>
+						<h2>Sr. Software Engineer</h2>
+						<span class="position">V2Solution</span>
+						<p class="mt-4">SpherexAI - AI-Powered Video Scene Analysis Dashboard. 
+							<ul>
+								<li>Video upload with title and metadata management</li>
+								<li>AI-driven scene detection and timestamp tagging</li>
+								<li>Timeline and bar chart visualization using Highcharts</li>
+								<li>Click-to-play video control from chart interactions</li>
+								<li>Excel export of scene analysis reports</li>
+								<li>Secure APIs with JWT authentication</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2020-2021</span>
+						<h2>UI Developer</h2>
+						<span class="position">Sourcemash Technologies </span>
+						<p class="mt-4">Newell Brand: Dymo, Parker Pen - Migrated websites to SFRA 
+							<ul>
+								<li>End-to-end UI/UX implementation</li>
+								<li>Project management and client coordination</li>
+								<li>PSD to HTML</li>
+								<li>Design translation and QA</li>
+								<li>Brochures</li>
+								<li>Email Templates</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2017-2020</span>
+						<h2>UI Developer</h2>
+						<span class="position">VineForce </span>
+						<p class="mt-4">1) Manage Incentive (USA) - Frontend with Angular (basic), Hubspot <br>  
+							2)	Ask Savvy (AI Tech) – WordPress, Metronic theme integration
+							<ul>
+								<li>UI design, hubspot workflow integration</li>
+								<li>Managed marketing content and visuals</li>
+								<li>Design translation and QA</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2015-2017</span>
+						<h2>Web Designer</h2>
+						<span class="position">Appsimity </span>
+						<p class="mt-4">Dynamic Building the Future (USA), 	Appsimity Solutions (India) 
+							<ul>
+								<li>Designed mockups, marketing material, and converted to HTML</li>
+								<li>Maintained design consistency across multiple platforms</li>
+								<li>Convert PSD to HTML</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2009-2012</span>
+    					<h2>Master in Computer Application</h2>
+    					<span class="position">Panjab University, Chandigarh</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2006-2009</span>
+    					<h2>Becholar in Computer Application</h2>
+    					<span class="position">CGC, Chandigarh University</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="Bhawna_Gupta_updated.pdf" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are the projects on Media, Websites,Mobile Apps, Brochures.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="#" data-toggle="modal"
+   data-target="#spherexModal" class="block-20 zoom-effect" style="background-image: url('images/video.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="#" data-toggle="modal"
+   data-target="#spherexModal">SpherexAI - AI-Powered Video Scene Analysis Dashboard</a></h3>
+                <p>Developed a full-stack web application that enables users to create titles by uploading videos along with associated metadata. All uploaded titles are listed on a centralized dashboard for quick access and monitoring.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="#" data-toggle="modal"
+   data-target="#lendingModal" class="block-20 zoom-effect" style="background-image: url('images/lending.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="#" data-toggle="modal"
+   data-target="#lendingModal">Lending Tree - MORP (USA) - UI using Vue.js</a></h3>
+                <p>Designed and implemented frontend based on Figma/Zeplin mockups. Maintained design standards across responsive layouts</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="#" data-toggle="modal"
+   data-target="#parkerModal" class="block-20 zoom-effect" style="background-image: url('images/parker.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="#" data-toggle="modal"
+   data-target="#parkerModal">Parker Pen</a></h3>
+                <p>Migrated websites to SFRA - End-to-end UI/UX implementation and Design translation from PSD to HTML </p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="#" data-toggle="modal"
+   data-target="#hiltModal" class="block-20 zoom-effect" style="background-image: url('images/HILT.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="#" data-toggle="modal"
+   data-target="#hiltModal">Human In The Loop Application</a></h3>
+				  <p>Designed and implemented a Human-in-the-Loop application with an intuitive dashboard to manage video uploads, metadata, and generated titles, ensuring a smooth and efficient user experience.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="#" data-toggle="modal"
+   data-target="#wireframeModal" class="block-20 zoom-effect" style="background-image: url('images/wireframes.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="#" data-toggle="modal"
+   data-target="#wireframeModal">Wireframe Designs UX Design</a></h3>
+				  <p>Designed low- and mid-fidelity wireframes to define user flows, information architecture, and layout structure before visual design and development.</p>
+				</div>
+			  </div>
+			</div>
+			
+		 </div>
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="10">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="30">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="100">0</strong>
+                <span>Designs</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="200">0</strong>
+                <span>Cups of coffee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>HTML5, CSS3, SCSS, Bootstra 4/5 <span> Figma   </span> </h2>
+						<div class="heading"> <h4> I love building intuitive UI and frontend experiences that look great and work seamlessly across devices. </h4>
+						<br>
+						<!-- <p><a href="https://github.com/rishabhnmishra" class="btn btn-primary py-3 px-5">GitHub</a></p> -->
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Mohali, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel:+919041012699">+91 9041012699</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:mca.gupta88@gmail.com">mca.gupta88@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="Bhawna_Gupta_updated.pdf">resumelink</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<!-- <div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div> -->
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <!-- <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li> -->
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/bhawna-gupta-a1385459/"><span class="icon-linkedin"></span></a></li>  
+					  <!-- <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-twitter"></span></a></li>
+					  <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/rishabhnmishra/"><span class="icon-instagram"></span></a></li> -->
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+	<div class="modal fade" id="spherexModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+
+			<div class="modal-content">
+			
+			<div class="modal-header">
+				<h5 class="modal-title">
+				SpherexAI - AI-Powered Video Scene Analysis Dashboard
+				</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+
+			<div class="modal-body">
+				<p>
+				Developed a full-stack web application that enables users to create titles by uploading videos along with associated metadata. All uploaded titles are listed on a centralized dashboard for quick access and monitoring.
+		<br>
+		Integrated AI-based video scene analysis to automatically detect and classify scenes such as violence, action, or sensitive content based on specific time intervals (e.g., 00:00:01-00:00:10). Detected scenes are stored with precise timestamps and categories.
+		<br>
+		Implemented an interactive video analytics dashboard using Highcharts, where scene data is displayed on a timeline and bar charts. Users can click on any chart point to automatically play and stop the video at the selected time range.
+		<br>
+		Added functionality to export scene analysis data to Excel, allowing users to download detailed reports including title information, scene type, start time, end time, and duration.
+		<br>
+		The backend was built using .NET Web API to manage video uploads, AI processing, data storage, Excel generation, and secure RESTful services. The frontend was developed in Angular, providing responsive dashboards, video playback controls, and data visualizations.
+
+				</p>
+
+				<p>
+					<b>Technologies:</b>
+		HTML, CSS, Bootstrap5, Figma, .NET Core Web API, Angular, SQL Server, AI/ML (Video Scene Detection), Highcharts, Excel Export, REST APIs, JWT Authentication, Azure Blob Storage
+
+				</p>
+
+				<!-- Optional image/video -->
+				<h3>Login</h3>
+				<img src="images/pro/login.png" class="img-fluid rounded" alt="Project preview"> 
+				<h3>Verification</h3>
+				<img src="images/pro/Verification screen.png" class="img-fluid rounded" alt="Project preview">
+				<h3>Dashboard</h3>
+				<img src="images/pro/dashboard.png" class="img-fluid rounded" alt="Project preview">
+				<h3>Dashboard - Dark Mode</h3>
+				<img src="images/pro/dashboard-dark.png" class="img-fluid rounded" alt="Project preview">
+				<h3>Summary</h3>
+				<img src="images/pro/summary.png" class="img-fluid rounded" alt="Project preview">
+				<h3>Summary - Dark Mode</h3>
+				<img src="images/pro/summary-dark.png" class="img-fluid rounded" alt="Project preview">
+				<h3>Video</h3>
+				<img src="images/pro/video.png" class="img-fluid rounded" alt="Project preview">
+				<h3>Video - Dark Mpode</h3>
+				<img src="images/pro/video-dark.png" class="img-fluid rounded" alt="Project preview">
+
+				<p> 
+					<b> Key Features:</b>
+					<ul>
+						<li>Video upload with title and metadata management</li>
+						<li>AI-driven scene detection and timestamp tagging</li>
+						<li>Timeline and bar chart visualization using Highcharts</li>
+						<li>Click-to-play video control from chart interactions</li>
+						<li>Excel export of scene analysis reports</li>
+						<li>Secure APIs with JWT authentication</li>
+					</ul>
+				</p>
+				<p>
+				<b>Responsibilities:</b>
+					<ul>
+						<li>Led UI implementation for enterprise applications using Angular, Dot Net and TypeScript</li>
+						<li>Translated Figma/Zeplin designs into scalable, responsive UI components</li>
+						<li>Collaborated with product managers and backend teams to deliver features on time</li>
+						<li>Ensured cross-browser compatibility and responsive behavior across devices</li>
+						<li>Improved UI consistency and reduced rework through reusable components</li>
+					</ul>
+				</p>
+			</div>
+
+			
+
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">
+				Close
+				</button>
+			</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<div class="modal fade" id="lendingModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+
+			<div class="modal-content">
+			
+			<div class="modal-header">
+				<h5 class="modal-title">
+				Lending Tree - MORP (USA)
+				</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+
+			<div class="modal-body">
+				<p>
+					For the Lending Tree - MORP (USA) project, I translated detailed Figma designs into fully responsive HTML layouts. The work involved closely following design specifications, implementing reusable UI components, and ensuring consistent spacing, alignment, and typography. Special attention was given to responsiveness across devices, accessibility considerations, and optimizing the UI for performance and cross-browser compatibility.
+				</p>
+
+				<p>
+					<b>Technologies:</b>
+					Figma designs into pixel-perfect HTML/CSS
+				</p>
+
+				<!-- Optional image/video -->
+				<img src="images/lending.png" class="img-fluid rounded" alt="Project preview"> 
+				<img src="images/lending-1.png" class="img-fluid rounded" alt="Project preview"> 
+				<img src="images/lending-2.png" class="img-fluid rounded" alt="Project preview"> 
+				<img src="images/lending-3.png" class="img-fluid rounded" alt="Project preview"> 
+				<img src="images/lending-4.png" class="img-fluid rounded" alt="Project preview"> 
+				<img src="images/lending-5.png" class="img-fluid rounded" alt="Project preview"> 
+				<img src="images/lending-6.png" class="img-fluid rounded" alt="Project preview"> 
+				
+				<p> 
+					<b> Key Features:</b>
+					<ul>
+						<li>Pixel-Perfect UI Implementation</li>
+						<li>Fully Responsive Design</li>
+						<li>Cross-Browser Compatibility</li>
+						<li>Semantic & Clean HTML Structure</li>
+						<li>Reusable UI Components</li>
+						<li>Design-to-Development Consistency</li>
+						<li>Performance-Oriented UI</li>
+						<li>Accessibility-Friendly Markup</li>
+					</ul>
+				</p>
+				<p>
+				<b>Responsibilities:</b>
+					<ul>
+						<li>Converted high-fidelity Figma designs into pixel-perfect HTML/CSS layouts.</li>
+						<li>Translated Figma/Zeplin designs into scalable, responsive UI components</li>
+						<li>Collaborated with product managers and backend teams to deliver features on time</li>
+						<li>Ensured cross-browser compatibility and responsive behavior across devices</li>
+						<li>Followed best practices for clean, readable, and maintainable frontend code.</li>
+					</ul>
+				</p>
+			</div>
+
+			
+
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">
+				Close
+				</button>
+			</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<div class="modal fade" id="parkerModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+
+			<div class="modal-content">
+			
+			<div class="modal-header">
+				<h5 class="modal-title">				
+				Parker Pen
+				</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+
+			<div class="modal-body">
+				<p>
+					Migrated the existing website to Salesforce Commerce Cloud SFRA, delivering end-to-end UI/UX implementation. Translated approved PSD designs into pixel-perfect, responsive HTML, ensuring consistency with brand guidelines. Implemented reusable UI components, optimized layouts for multiple devices, and ensured cross-browser compatibility while supporting a smooth transition to the SFRA architecture.
+				</p>
+
+				<p>
+					<b>Technologies:</b>
+					Figma designs into pixel-perfect HTML/CSS - during migration to SFRA, converting PSD designs into responsive, maintainable HTML and ensuring a seamless design-to-development workflow
+				</p>
+
+				<!-- Optional image/video -->
+				<img src="images/parker.png" class="img-fluid rounded" alt="Project preview"> 
+				<img src="images/parker-1.png" class="img-fluid rounded" alt="Project preview"> 
+				<img src="images/parker-2.png" class="img-fluid rounded" alt="Project preview"> 
+				<img src="images/parker-3.png" class="img-fluid rounded" alt="Project preview"> 
+				<img src="images/parker-4.png" class="img-fluid rounded" alt="Project preview"> 
+				
+				<p> 
+					<b> Key Features:</b>
+					<ul>
+						<li>SFRA-Based Website Migration</li>
+						<li>End-to-End UI/UX Implementation</li>
+						<li>Pixel-Perfect PSD to HTML Conversio</li>
+						<li>Responsive & Mobile-First Design</li>
+						<li>Reusable & Scalable UI Components</li>
+						<li>Cross-Browser Compatibility</li>
+						<li>Performance-Oriented UI</li>
+						<li>Brand Consistency & Design Accuracy</li>
+					</ul>
+				</p>
+				<p>
+				<b>Responsibilities:</b>
+					<ul>
+						<li>Led end-to-end UI/UX implementation during the migration of the Parker Pen website to Salesforce Commerce Cloud SFRA.</li>
+						<li>Converted PSD designs into pixel-perfect, responsive HTML, ensuring strict adherence to brand guidelines.</li>
+						<li>Implemented SFRA-compatible UI components following Salesforce best practices and folder structure.</li>
+						<li>Ensured responsive and mobile-first layouts across all key pages (PDP, PLP, Home, CMS pages).</li>
+						<li>Maintained design consistency across the website, including typography, spacing, colors, and interactions.</li>
+					</ul>
+				</p>
+			</div>
+
+			
+
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">
+				Close
+				</button>
+			</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<div class="modal fade" id="hiltModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+
+			<div class="modal-content">
+			
+			<div class="modal-header">
+				<h5 class="modal-title">
+				
+Human In The Loop Application
+				</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+
+			<div class="modal-body">
+				<p>
+					Designed and implemented a Human-in-the-Loop application with an intuitive dashboard to manage video uploads, metadata, and generated titles, ensuring a smooth and efficient user experience.
+				</p>
+
+				<p>
+					<b>Technologies:</b>
+					HTML, CSS, Bootstrap5, Figma, .NET Core Web API, Angular, SQL Server, AI/ML (Video Scene Detection), Highcharts, Excel Export, REST APIs, JWT Authentication, Azure Blob Storage
+				</p>
+
+				<!-- Optional image/video -->
+				<img src="images/HILT.png" class="img-fluid rounded" alt="Project preview"> 
+				<img src="images/hilt-1.png" class="img-fluid rounded" alt="Project preview"> 
+				<img src="images/hilt-2.png" class="img-fluid rounded" alt="Project preview"> 
+				<img src="images/hilt-3.png" class="img-fluid rounded" alt="Project preview"> 
+				<img src="images/hilt-4.png" class="img-fluid rounded" alt="Project preview"> 
+				<img src="images/hilt-5.png" class="img-fluid rounded" alt="Project preview"> 
+				
+				<p> 
+					<b> Key Features:</b>
+					<ul>
+						<li>Video Upload with Metadata</li>
+						<li>Human-in-the-Loop Workflow</li>
+						<li>Status Tracking & Monitoring</li>
+						<li>Responsive & Mobile-First Design</li>
+						<li>Reusable & Scalable UI Components</li>
+						<li>Cross-Browser Compatibility</li>
+						<li>Role-Based Access (Optional / If Applicable)</li>
+						<li>Efficient Review Process</li>
+					</ul>
+				</p>
+				<p>
+				<b>Responsibilities:</b>
+					<ul>
+						<li>Designed and developed the UI/UX for a Human-in-the-Loop web application, focusing on usability and workflow clarity.</li>
+						<li>Implemented video upload functionality with metadata handling to support title creation and review processes.</li>
+						<li>Built a centralized dashboard to display, track, and manage all uploaded videos and generated titles.</li>
+						<li>Ensured smooth user flows for uploading, reviewing, and monitoring content within the application.</li>
+						<li>Ensured consistent design implementation aligned with product and business requirements.</li>
+					</ul>
+				</p>
+			</div>
+
+			
+
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">
+				Close
+				</button>
+			</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<div class="modal fade" id="wireframeModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+
+			<div class="modal-content">
+			
+			<div class="modal-header">
+				<h5 class="modal-title">			
+
+Wireframe Designs UX Design
+				</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+
+			<div class="modal-body">
+				<p>
+					Designed low- and mid-fidelity wireframes to define user flows, information architecture, and layout structure before visual design and development.
+				</p>
+
+				<p>
+					<b>Technologies:</b>
+					Figma, Adobe XD, Photoshop, Canva
+				</p>
+
+				<!-- Optional image/video -->
+				<img src="images/wireframes.png" class="img-fluid rounded" alt="Project preview"> 
+				<img src="images/wireframe-1.png" class="img-fluid rounded" alt="Project preview"> 
+				<img src="images/wireframe-2.png" class="img-fluid rounded" alt="Project preview"> 
+				<img src="images/wireframe-3.png" class="img-fluid rounded" alt="Project preview"> 
+				<img src="images/wireframe-4.png" class="img-fluid rounded" alt="Project preview"> 
+				<img src="images/wireframe-5.png" class="img-fluid rounded" alt="Project preview"> 
+				<img src="images/wireframe-6.png" class="img-fluid rounded" alt="Project preview"> 
+				
+				<p> 
+					<b> Key Features:</b>
+					<ul>
+						<li>User-centric layouts focusing on usability, clarity, and task efficiency</li>
+						<li>Information hierarchy using grids, spacing, and visual grouping</li>
+						<li>End-to-end user flows covering onboarding, dashboards, forms, and workflows</li>
+						<li>Responsive structure for desktop, tablet, and mobile breakpoints</li>
+						<li>Component-based design approach for reusability and scalability</li>
+						<li>State definitions including empty states, error states, loading states, and permissions</li>
+						<li>Alignment with business logic without altering core product workflows</li>
+						<li>Early validation of UX concepts before visual design and development</li>
+					</ul>
+				</p>
+				<p>
+				<b>Responsibilities:</b>
+					<ul>
+						<li>Translated product requirements, workflows, and user stories into wireframes</li>
+						<li>Defined page structure, navigation, and interaction behavior</li>
+						<li>Collaborated with product managers, stakeholders, and developers to refine UX flows</li>
+						<li>Created wireframes for complex SaaS screens involving roles, permissions, and states</li>
+						<li>Identified reusable patterns to reduce design and development effort</li>
+						<li>Ensured wireframes supported accessibility and usability best practices</li>
+						<li>Iterated quickly based on feedback while maintaining consistency</li>
+						<li>Handed off wireframes clearly to visual designers or directly to development teams</li>
+					</ul>
+				</p>
+			</div>
+
+			
+
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">
+				Close
+				</button>
+			</div>
+
+			</div>
+
+		</div>
+	</div>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
