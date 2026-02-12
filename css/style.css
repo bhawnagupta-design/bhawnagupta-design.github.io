@@ -9713,5 +9713,40 @@ textarea.form-control {
 }
 
 .modal-title {
+    color: #000000;
+    font-size: 24px;
+}
+
+.table-modal {
   color: #000000;
+  border-collapse: separate;
+  border-spacing: 0 5px; /* horizontal | vertical spacing */
+}
+
+.table-modal tr td {
+  padding: 10px;
+}
+
+.modal-header {
+  align-items: center;
+}
+
+.table-modal tr td:first-child {
+  font-weight: normal;  
+  background-color: #EEF0F4;
+}
+
+.table-modal tr td:last-child {
+  font-weight: normal;  
+  background-color: #EEF0F4;
+  opacity: .5;
+}
+
+.casestudy-table {
+  background-color: #E7EAEF;
+  border-radius: 10px;
+}
+
+.casestudy-table td{
+  padding: 10px;
 }
